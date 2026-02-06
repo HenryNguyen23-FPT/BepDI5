@@ -1,0 +1,680 @@
+/* ===================================
+   RESPONSIVE CHO NAVBAR
+   =================================== */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+        background-color: white;
+        border-top: 1px solid #d0cccc;
+    }
+
+    .navbar-toggler {
+        border: none !important;
+        box-shadow: none !important;
+        color: black;
+    }
+
+    .navbar-toggler:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    .navbar-nav .nav-link {
+        text-align: left;
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+        padding-top: 7px !important;
+        padding-bottom: 7px !important;
+        width: 100%;
+        font-size: small;
+        color: black;
+        font-weight: 500;
+    }
+
+    .navbar-nav .nav-link.active {
+        background-color: #d32f2f !important;
+        color: white !important;
+        border-radius: 0 !important;
+    }
+
+    .lang-switch {
+        position: static;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .navbar-brand img {
+        height: 60px !important;
+    }
+}
+
+/* ===================================
+   RESPONSIVE CHO SECTION DI5
+   =================================== */
+@media (min-width: 992px) {
+    .content-box {
+        margin-right: -6px;
+        margin-top: 5px;
+        margin-left: 25px;
+        margin-bottom: 70px;
+        width: 110%;
+    }
+}
+
+@media (max-width: 991px) {
+    .section-container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    /* Đảo thứ tự: ảnh lên trên, text xuống dưới */
+    #di5 .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .content-box {
+        margin: 0;
+        margin-bottom: 20px;
+        padding: 20px 25px;
+        order: 2;
+    }
+
+    .image-wrapper {
+        order: 1;
+        margin-bottom: 20px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .image-wrapper img {
+        width: 100% !important;
+        height: auto !important;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .content-box {
+        padding: 15px 20px;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .section-text-di5 {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+}
+
+/* ===================================
+   RESPONSIVE CHO SECTION VAI TRÒ
+   =================================== */
+@media (max-width: 991px) {
+    .role-image-wrapper {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .role-image-wrapper img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .role-content h2 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+
+    .role-list {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 575px) {
+    .role-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .section-text {
+        font-size: 15px;
+    }
+
+    .role-list li {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+}
+
+/* ===================================
+   RESPONSIVE CHO SECTION MÔ HÌNH KINH DOANH
+   =================================== */
+@media (max-width: 991px) {
+    .business-image-wrapper {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .business-image-wrapper img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .business-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .section-text-3 p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 575px) {
+    .business-content h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* ===================================
+   RESPONSIVE CHO SECTION THƯƠNG HIỆU & NHÃN HIỆU
+   =================================== */
+@media (max-width: 991px) {
+    .brand-slide-content {
+        margin-left: 0;
+        margin-top: 0;
+        height: auto;
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .brand-img-frame {
+        width: 100%;
+        max-width: 400px;
+        height: 280px;
+        margin-bottom: 15px;
+    }
+
+    #nhan-hieu .carousel-control-prev.custom-control {
+        left: 10px !important;
+    }
+
+    #nhan-hieu .carousel-control-next.custom-control {
+        right: 10px !important;
+    }
+
+    .carousel-indicators {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 575px) {
+    .brand-img-frame {
+        height: 240px;
+        max-width: 100%;
+    }
+
+    .brand-name {
+        font-size: 1.3rem;
+    }
+
+    .brand-slogan {
+        font-size: 14px;
+    }
+
+    .custom-control {
+        width: 40px !important;
+        height: 40px !important;
+    }
+}
+
+/* ===================================
+   RESPONSIVE CHO SECTION SẢN PHẨM
+   =================================== */
+@media (max-width: 991px) {
+
+    /* Tăng kích thước ảnh */
+    .product-img-frame-5 {
+        width: 100%;
+        max-width: 350px;
+        height: 350px;
+        margin-bottom: 15px;
+    }
+
+    .product-title-5 {
+        font-size: 17px;
+        text-align: center;
+    }
+
+    /* Title section */
+    .section-title {
+        font-size: 26px !important;
+    }
+
+    .section-title span {
+        font-size: 26px !important;
+    }
+
+    .section-text-5 {
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 575px) {
+
+    /* Tăng size ảnh trên mobile */
+    .product-img-frame-5 {
+        max-width: 90%;
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+
+    .product-img-frame-5 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .product-title-5 {
+        font-size: 16px;
+    }
+
+    /* Title section */
+    .section-title {
+        font-size: 22px !important;
+    }
+
+    .section-title span {
+        font-size: 22px !important;
+    }
+
+    .section-text-5 {
+        font-size: 15px !important;
+    }
+}
+
+/* ===================================
+   RESPONSIVE CHO SECTION HỢP TÁC
+   =================================== */
+@media (max-width: 991px) {
+    .coop-content {
+        width: 100%;
+        order: 2;
+    }
+
+    .coop-image-wrapper {
+        margin-top: 0;
+        margin-bottom: 20px;
+        order: 1;
+        text-align: center;
+    }
+
+    .coop-image-wrapper img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .coop-text {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 575px) {
+    .coop-image-wrapper img {
+        max-width: 100%;
+    }
+}
+
+/* ===================================
+   RESPONSIVE CHO SECTION NGUỒN NHÂN LỰC
+   =================================== */
+@media (max-width: 991px) {
+    .hr-banner {
+        padding: 20px;
+    }
+
+    .hr-text {
+        max-width: 100%;
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .hr-banner h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .hr-banner {
+        padding: 15px;
+    }
+
+    .hr-banner h2 {
+        font-size: 1.3rem;
+    }
+
+    .hr-text {
+        font-size: 14px;
+    }
+}
+
+/* ===================================
+   RESPONSIVE CHO SECTION HOẠT ĐỘNG
+   =================================== */
+@media (max-width: 991px) {
+    .yellow-header-style {
+        padding: 12px;
+    }
+
+    .yellow-header-style h3 {
+        font-size: 20px;
+    }
+
+    .news-item .img-frame-hd {
+        max-width: 220px;
+        height: 130px;
+    }
+
+    .news-link {
+        font-size: 13px;
+    }
+
+    .custom-nav-btn {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .custom-nav-btn::after {
+        font-size: 16px !important;
+    }
+}
+
+@media (max-width: 575px) {
+    .yellow-header-style h3 {
+        font-size: 18px;
+    }
+
+    .news-item .img-frame-hd {
+        max-width: 200px;
+        height: 120px;
+    }
+
+    .news-link {
+        font-size: 12px;
+        line-height: 1.3;
+    }
+
+    .swiper-button-prev.custom-nav-btn {
+        left: 5px;
+    }
+
+    .swiper-button-next.custom-nav-btn {
+        right: 5px;
+    }
+}
+
+/* ===================================
+   RESPONSIVE CHO SECTION HỎI ĐÁP
+   =================================== */
+@media (max-width: 991px) {
+    #hoi-dap-content .section-container {
+        padding: 10px 15px !important;
+    }
+
+    .faq-list li b {
+        font-size: 14px;
+    }
+
+    .faq-icon {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+@media (max-width: 575px) {
+    .faq-list li b {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+}
+
+/* ===================================
+   RESPONSIVE CHO SECTION DINH DƯỠNG & SỨC KHỎE
+   =================================== */
+@media (max-width: 991px) {
+    .section-container-ddsk {
+        max-width: 100%;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        max-height: none;
+    }
+
+    .ddsk-item .img-frame {
+        width: 160px;
+        height: 160px;
+    }
+
+    .news-title {
+        font-size: 15px;
+        line-height: 1.4;
+        min-height: auto;
+    }
+
+    .news-desc {
+        font-size: 14px;
+        line-height: 1.4;
+        min-height: auto;
+    }
+}
+
+@media (max-width: 575px) {
+    .section-container-ddsk {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .ddsk-item .img-frame {
+        width: 140px;
+        height: 140px;
+    }
+
+    .news-title {
+        font-size: 14px;
+    }
+
+    .news-desc {
+        font-size: 13px;
+    }
+}
+
+/* ===================================
+   RESPONSIVE CHO FOOTER
+   =================================== */
+@media (max-width: 991px) {
+
+    /* Container */
+    .container-fluid-custom {
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 20px;
+    }
+
+    /* Footer Banner - Fix background */
+    .footer-banner {
+        background-size: cover !important;
+        background-position: center !important;
+        padding: 20px 15px !important;
+    }
+
+    /* Title */
+    .footer-banner h1 {
+        font-size: 24px !important;
+        margin-top: 0 !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* Footer Info */
+    .footer-info {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-bottom: 25px;
+    }
+
+    /* Content Text */
+    .content-text {
+        margin-left: 0 !important;
+        font-size: 16px;
+    }
+
+    .content-text p {
+        margin-bottom: 10px;
+    }
+
+    /* Button */
+    .btn-primary {
+        font-size: 14px;
+        padding: 10px 20px;
+        display: block;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Social Icons */
+    .social-icons {
+        border-spacing: 10px 0;
+        margin-bottom: 15px !important;
+    }
+
+    .social-icons img {
+        width: 50px;
+        height: 50px;
+    }
+
+    /* Map Wrapper */
+    .map-wrapper {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+        margin-top: 20px;
+    }
+
+    .map-wrapper iframe {
+        width: 100% !important;
+        height: 300px !important;
+        border-radius: 8px;
+    }
+}
+
+@media (max-width: 575px) {
+
+    /* Container */
+    .container-fluid-custom {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    /* Footer Banner */
+    .footer-banner {
+        padding: 15px 10px !important;
+    }
+
+    /* Title */
+    .footer-banner h1 {
+        font-size: 24px !important;
+        margin-bottom: 15px !important;
+    }
+
+    /* Content Text */
+    .content-text {
+        font-size: 17px;
+    }
+
+    .content-text p {
+        margin-bottom: 8px;
+    }
+
+    .content-text .fw-bold {
+        font-size: 14px;
+    }
+
+    /* Button */
+    .btn-primary {
+        font-size: 13px;
+        padding: 8px 16px;
+        max-width: 100%;
+    }
+
+    /* Social Icons */
+    .social-icons {
+        border-spacing: 8px 0;
+    }
+
+    .social-icons img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .social-icons td {
+        padding-right: 5px !important;
+    }
+
+    .social-icons td.pe-4 {
+        padding-right: 8px !important;
+    }
+
+    /* Map */
+    .map-wrapper iframe {
+        height: 250px !important;
+    }
+
+    /* Copyright text */
+    .content-text div p:last-child {
+        font-size: 17px;
+    }
+}
+
+/* ===================================
+   RESPONSIVE CHO NÚT BACK TO TOP
+   =================================== */
+@media (max-width: 575px) {
+    #myBtn {
+        width: 50px;
+        height: 55px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 16px;
+        line-height: 55px;
+    }
+}
+
+/* ===================================
+   FIX PADDING CHO TẤT CẢ SECTION
+   =================================== */
+@media (max-width: 991px) {
+    section {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+
+    section .section-container {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+}
+
+@media (max-width: 575px) {
+    section {
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
+    }
+}

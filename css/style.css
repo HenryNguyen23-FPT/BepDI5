@@ -1,0 +1,772 @@
+body {
+    background-color: #f0f0f0;
+    font-family: "Times New Roman", Times, serif;
+}
+
+html {
+    scroll-behavior: auto !important;
+    scroll-padding-top: 60px;
+}
+
+.lang-switch {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 14px;
+    z-index: 1000;
+}
+
+.lang-switch .lang-active {
+    color: #ef4455;
+    text-decoration: none;
+}
+
+.lang-switch .lang-normal {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.lang-switch .divider {
+    margin: 0 5px;
+}
+
+.navbar-nav .nav-link {
+    color: black;
+    font-weight: 480;
+    padding: 0px 15px !important;
+}
+
+#navbar-main {
+    padding: 0;
+    border-bottom: 1px solid rgb(165, 163, 163);
+    margin-bottom: 0;
+}
+
+.navbar-nav {
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.navbar-nav .nav-link.active {
+    background-color: #f43838 !important;
+    color: #ffffff !important;
+    font-weight: bold;
+    border-radius: 0;
+}
+
+.dropdown-multilevel {
+    position: relative;
+}
+
+.level-1-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    background-color: #ffecc7;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+.dropdown-multilevel:hover .level-1-menu {
+    display: block;
+}
+
+.level-1-menu li,
+.level-2-menu li,
+.level-3-menu li {
+    position: relative;
+    width: 100%;
+}
+
+.level-1-menu a,
+.level-2-menu a,
+.level-3-menu a {
+    display: block;
+    padding: 1px 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 15px;
+    transition: all 0.2s;
+    border-radius: 35px;
+    margin-bottom: 2px;
+}
+
+.level-1-menu li:hover>a,
+.level-2-menu li:hover>a {
+    background-color: #5d4a34;
+    color: #fff;
+}
+
+.level-2-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 200px;
+    background-color: #ffecc7;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1001;
+    border-right: 1.5px solid #ddd;
+    border-radius: 5px;
+}
+
+.has-child:hover>.level-2-menu {
+    display: block;
+}
+
+.dropdown-multilevel:hover .nav-link {
+    background-color: #b36c22;
+    color: white !important;
+}
+
+.level-3-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 200px;
+    background-color: #ffecc7;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1002;
+    box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.has-child-level-3:hover>.level-3-menu {
+    display: block;
+}
+
+.level-3-menu li:hover>a {
+    background-color: #735a30;
+    color: #fff;
+    
+}
+
+.section-container {
+    background-color: #ffffff;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    margin: 0 auto;
+    max-width: 1170px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: visible;
+}
+
+/* Section Di5 */
+.content-box {
+    background-color: #ffe4b5;
+    padding: 20px 88px;
+    border-radius: 8px;
+    margin-bottom: 5%;
+    margin-top: -40px;
+    
+}
+.section-title {
+    font-size: 2rem;
+    color: #2c2c2c;
+}
+
+.image-wrapper {
+    margin-bottom: 15px;
+}
+
+.image-wrapper img {
+    width: 330px;
+    height: 420px;
+    box-shadow: 20px 0 30px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+
+/* --- SECTION 2: VAI TRÒ --- */
+.role-image-wrapper img {
+    border-radius: 8px;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    box-shadow: 20px 0 35px -7px rgba(0, 0, 0, 0.3);
+}
+
+.role-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 0px;
+}
+
+.role-list li {
+    font-family: "Times New Roman", serif;
+    color: #333;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: flex-start;
+}
+
+/* Section 3:Mô hình kinh doanh */
+.section-text-3 p {
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.row-3 {
+    max-width: 100%;
+}
+
+.business-image-wrapper {
+    display: flex;
+    justify-content: center;
+
+}
+
+.business-image-wrapper img {
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 20px 0 30px 5px rgba(0, 0, 0, 0.3);
+    object-fit: contain;
+    margin-bottom: 30px;
+    margin-top: -5px;
+    margin-right: 50px;
+}
+
+/* Section 4: Thương hiệu và nhãn hiệu */
+
+
+.brand-slide-content {
+    height: 400px;
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+    margin-top: 20px;
+}
+
+.brand-img-frame {
+    width: 540px;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-img-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important;
+    border-radius: inherit;
+}
+
+.carousel-item a:hover .brand-name,
+.carousel-item a:hover .brand-slogan {
+    text-decoration: underline;
+    text-decoration-color: #020202;
+    text-underline-offset: 4px;
+    color: #000000;
+    transition: all 0.3s ease;
+}
+.custom-control {
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: none;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+
+/* --- NÚT PREV --- */
+.custom-control .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23ff0000' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M10 12l-4-4 4-4'/%3e%3c/svg%3e");
+    width: 3rem;
+    height: 3rem;
+    filter: none !important;
+    opacity: 1;
+}
+
+/* --- NÚT NEXT --- */
+.custom-control .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23ff0000' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M6 12l4-4-4-4'/%3e%3c/svg%3e");
+
+    width: 3rem;
+    height: 3rem;
+    filter: none !important;
+    opacity: 1;
+}
+
+.custom-control .carousel-control-prev-icon,
+.custom-control .carousel-control-next-icon {
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.3)) !important;
+}
+
+
+#carouselBrand {
+    position: relative;
+}
+
+#nhan-hieu {
+    position: relative;
+}
+
+#nhan-hieu .custom-control {
+    position: absolute;
+    margin-top: -30px;
+}
+
+#nhan-hieu .carousel-control-prev.custom-control {
+    left: -50px !important;
+}
+#nhan-hieu .carousel-control-next.custom-control {
+    right: -50px;
+}
+
+
+
+
+.carousel-indicators.custom-indicators button {
+    width: 15px;
+    height: 15px;
+    border-radius: 6px;
+    border: 1px solid #000000;
+    background-color: white;
+    opacity: 1;
+    margin: 5px 3px;
+}
+
+.carousel-indicators.custom-indicators button.active {
+    background-color: #ff9800;
+    border-color: #ff9800;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background-color: #d9d9d9;
+    opacity: 1;
+    margin: 0 6px;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicators [data-bs-target].active {
+    background-color: #ff9800;
+    transform: scale(1.2);
+}
+
+
+.carousel-indicators {
+    position: relative;
+    bottom: auto;
+    margin-top: 35px;
+ 
+    justify-content: center;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 2px solid #d9d9d9;
+    background-color: transparent;
+    opacity: 1;
+    margin: 0 8px;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicators [data-bs-target].active {
+    background-color: #ff9800;
+    border-color: #ff9800;
+    transform: scale(1.1);
+}
+
+
+/*Section: Sản phẩm */
+
+.product-img-frame-5 {
+    width: 315px;
+    height: 315px;
+    aspect-ratio: 1 / 1;
+    background-color: #fff;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+.product-img-frame-5 img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 20px 0 30px 5px rgba(0, 0, 0, 0.3);
+}
+
+.product-title-5 {
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+
+/* --- SECTION 6: HỢP TÁC --- */
+.coop-content {
+    color: #000;
+    width: 104%;
+}
+
+.coop-text {
+    font-family: "Times New Roman", Times, serif;
+}
+
+.coop-image-wrapper {
+    margin-top: -170px;
+}
+
+.coop-image-wrapper img {
+    height: 250px;
+    width: 550px;
+    box-shadow: 20px 0 30px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* --- SECTION 7: NGUỒN NHÂN LỰC --- */
+#nguon-nhan-luc .section-container {
+    padding: 0 !important;
+    overflow: hidden;
+}
+.hr-banner {
+    background-image: url(/imgsection/nguonnhanluc/backgoudv1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.hr-text {
+    text-align: left;
+    max-width: 96%;
+}
+
+/* Header:Hoạt động, Hỏi đáp,Tạp chí dinh dưỡng và sức khỏe */
+.yellow-header-style {
+    background-color: #fcb428;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 1px 10px 10px 2px #888;
+    color: #8e431a;
+    margin-bottom: 0;
+}
+
+.yellow-header-style h3 {
+    font-family: 'Times New Roman', serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 26.4px;
+    margin: 0;
+    color: inherit;
+}
+
+/* Section:Hoạt động */
+#hoat-dong-content{
+    border-radius: 5px;
+}
+.news-item {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.news-item .img-frame-hd {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 246px;
+    height: 140px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.news-item .img-frame-hd img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.news-link {
+    text-align: center;
+    display: block;
+    width: 100%;
+    color: #358cd8;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 10px 0px;
+    line-height: 15.4px;
+    font-weight: 500;
+}
+
+.news-link:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+.custom-nav-btn {
+    width: 34px !important;
+    height: 34px !important;
+    background-color: #337ab7;
+    border: 0.8px solid #2e6da4;
+    border-radius: 50%;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.custom-nav-btn::after {
+    font-family: "Times New Roman", Times, serif !important;
+    font-size: 18px !important;
+    color: #ffffff;
+    font-weight: normal;
+    line-height: 20px;
+
+}
+
+.swiper-button-prev.custom-nav-btn::after {
+    content: "<";
+}
+
+.swiper-button-next.custom-nav-btn::after {
+    content: ">";
+}
+
+.custom-nav-btn:hover {
+    background-color: #286090;
+    border-color: #204d74;
+}
+
+.swiper-button-prev.custom-nav-btn {
+    left: 10px;
+}
+
+.swiper-button-next.custom-nav-btn {
+    right: 10px;
+}
+
+.swiper-button-disabled {
+    opacity: 0.3 !important;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+
+/* Hỏi đáp */
+
+#hoi-dap-content .section-container {
+    padding: 12px 15px !important;
+    border-radius: 5px;
+}
+
+.faq-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.faq-list li {
+    display: flex;
+    align-items: center;
+}
+
+.faq-list li b {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bolder;
+    font-size: 15px;
+    line-height: 22px;
+    color: #8e431a;
+    margin-left: 4px;
+}
+
+.faq-icon {
+    display: block;
+    position: relative;
+    width: 14px;
+    height: 14px;
+    background-color: #8e431a;
+    border-radius: 2px;
+}
+
+.faq-icon::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 9px;
+    height: 2.5px;
+    background-color: white;
+}
+
+
+/* Dinh dưỡng và sức khỏe */
+.section-container-ddsk{
+        background-color: #ffffff;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 30px;
+        margin: 0 auto;
+        max-width: 1415px;
+        max-height: 372px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        position: relative;
+        overflow: visible;
+}
+
+.ddsk-item {
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ddsk-item .img-frame {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 10px;
+    border: 1.6px solid #fcb428;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ddsk-item .img-frame img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.news-title {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 700;
+    color: #a56b00;
+    line-height: 25px;
+    display: block;
+    text-align: center;
+    margin-top: 4px;
+    min-height: 50px;
+}
+
+.news-desc {
+    font-family: "Times New Roman", Times, serif;
+    color: #333333;
+    line-height: 25px;
+    margin-top: 6px;
+    text-align: center;
+    min-height: 75px;
+}
+
+.ddsk-item:hover .news-title,
+.ddsk-item:hover .news-desc {
+    text-decoration: underline;
+}
+
+
+/* --- FOOTER --- */
+.container-fluid-custom {
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+
+.footer-banner {
+    background-image: url(/imgs/footer.jpg);
+    background-size: auto 98.5%;
+    background-repeat: repeat-x;
+    overflow: hidden;
+}
+
+.footer-law {
+    color: #429be8;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}   
+.footer-law:hover {
+    color: #23527c!important;
+    text-decoration: underline!important;
+}
+
+/* --- BẢNG ICON --- */
+.social-icons {
+    border-collapse: separate;
+    border-spacing: 15px 0;
+}
+
+.social-icons td {
+    padding: 0;
+}
+
+.content-text {
+    margin-left: -15px;
+}
+
+.social-icons img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+/* --- BẢN ĐỒ --- */
+.map-wrapper iframe {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    height: 300px;
+}
+
+/* Nút Back to Top */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+    width: 55px;
+    height: 60px;
+    border-radius: 30px 30px 5px 5px;
+    background-color: #7b4397;
+    color: white;
+    border: none;
+
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+#myBtn:hover {
+    background-color: #5a2d70;
+    transform: translateY(-5px);
+}
+
