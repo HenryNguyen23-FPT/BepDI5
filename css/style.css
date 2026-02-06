@@ -441,7 +441,7 @@ html {
     overflow: hidden;
 }
 .hr-banner {
-    background-image: url(imgsection/nguonnhanluc/backgoudv1.jpg);
+    background-image: url(../imgsection/nguonnhanluc/backgoudv1.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -695,7 +695,7 @@ html {
 
 
 .footer-banner {
-    background-image: url(imgs/footer.jpg);
+    background-image: url(../imgs/footer.jpg);
     background-size: auto 98.5%;
     background-repeat: repeat-x;
     overflow: hidden;
